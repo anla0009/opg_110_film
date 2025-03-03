@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+@plugin '@tailwindcss/forms';
+
+
+@theme {
+  /* Her tilføjes theme variable // tokens */
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@layer components{
+
+}
+@layer utilities{
+  
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(4rem);
+  transition: all 0.7s ease-in-out;
+}
+
+.fade-in.opacity-100 {
+  opacity: 1;
+}
+
+.fade-in.translate-y-0 {
+  transform: translateY(0);
+}

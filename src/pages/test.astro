@@ -1,0 +1,32 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Link from '../components/Link.astro';
+import { Image } from 'astro:assets';
+import image1 from "../assets/images/110_img1.jpg";
+import image2 from "../assets/images/110_img2.jpg";
+import image3 from "../assets/images/110_img3.png";
+import image4 from "../assets/images/110_img4.png";
+import image5 from "../assets/images/110_img5.png";
+
+
+---
+
+<MainLayout title="Titel">
+    <div class="scrolly-container flex flex-col items-center h-screen overflow-y-scroll space-y-6 p-6">
+        <img src={image4.src} alt="Image 4" />
+        <p class="text-center max-w-lg fade-in opacity-0 translate-y-4 transition-all duration-700">Kodak launched 110 film in 1972, making cameras easy to load. Drop-in cassettes removed threading hassles, simplifying photography. The small 13×17mm negatives allowed compact, pocketable cameras. Despite convenience, the tiny frames made high-quality prints difficult.</p>
+
+        <img src={image5.src} alt="Image 5" />
+        <p class="text-center max-w-lg fade-in opacity-0 translate-y-4 transition-all duration-700">110 film quickly gained popularity for its simplicity and small size. Most cameras had fixed focus, single shutter speed, and plastic lenses. Film latitude helped compensate for exposure and focus limitations. Poor print quality kept it from competing with larger film formats.</p>
+
+        <img src={image1.src} alt="Image 1"/>
+        <p class="text-center max-w-lg fade-in opacity-0 translate-y-4 transition-all duration-700">Loose tolerances & plastic cassettes limited 110 film's precision. The film transport mechanism had too much play for sharp images. High-end cameras couldn't overcome the flaws of the cassette design. As a result, 110 remained an amateur-oriented, low-quality format.</p>
+
+        <img src={image2.src} alt="Image 2"/>
+        <p class="text-center max-w-lg fade-in opacity-0 translate-y-4 transition-all duration-700">By the ‘90s, 110 film production declined as demand dropped. Kodak and Fuji continued making it, but digital was taking over. APS and disc film aimed to replace it but failed to gain traction. In 2009, Fuji ceased production, marking the format's near end.</p>
+
+        <img src={image3.src} alt="Image 3"/>
+        <p class="text-center max-w-lg fade-in opacity-0 translate-y-4 transition-all duration-700">Lomography revived 110 film in 2012 with new B&W and color. Their releases included Orca, Tiger, and Peacock slide films. Nostalgic photographers embraced it despite its known drawbacks. 110 outlived APS and disc film, proving its enduring appeal.</p>
+    </div>
+</MainLayout>
